@@ -2,9 +2,9 @@
 
 Definitions for the [LuaLaTeX](https://www.latex-project.org) library.
 
-TeXLuaCats-Repository: https://github.com/TeXLuaCATS/LuaLaTeX (upstream)
+TeXLuaCATS-Repository: https://github.com/TeXLuaCATS/LuaLaTeX (upstream)
 
-LuaCats-Repository: https://github.com/LuaCATS/tex-lualatex (downstream)
+LuaCATS-Repository: https://github.com/LuaCATS/tex-lualatex (downstream)
 
 ## About the documented project
 
