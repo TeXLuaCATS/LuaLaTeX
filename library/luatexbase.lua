@@ -2,7 +2,8 @@
 
 ---
 ---The Lua source file is location in `texmf-dist/tex/latex/base/ltluatex.lua`
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---
+---{{ contribute }}
 luatexbase = {}
 
 ---
@@ -17,7 +18,8 @@ luatexbase = {}
 ---@param callback CallbackName
 ---@param func function
 ---@param description string # A textual description of the function.
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---
+---{{ contribute }}
 function luatexbase.add_to_callback(callback, func, description) end
 
 ---
@@ -34,7 +36,8 @@ function luatexbase.add_to_callback(callback, func, description) end
 ---
 ---@return function func
 ---@return string description # A textual description of the function.
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---
+---{{ contribute }}
 function luatexbase.remove_from_callback(callback, description) end
 
 ---
@@ -50,7 +53,7 @@ function luatexbase.remove_from_callback(callback, description) end
 ---
 ---@return boolean
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.in_callback(callback, description) end
 
 ---
@@ -69,7 +72,7 @@ function luatexbase.in_callback(callback, description) end
 ---
 ---@param callback CallbackName
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.disable_callback(callback) end
 
 ---
@@ -86,7 +89,7 @@ function luatexbase.disable_callback(callback) end
 ---
 ---@return table
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.callback_descriptions(callback) end
 
 ---
@@ -104,7 +107,7 @@ function luatexbase.callback_descriptions(callback) end
 ---@param type CallbackType
 ---@param default function|false
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.create_callback(name, type, default) end
 
 ---
@@ -119,11 +122,11 @@ function luatexbase.create_callback(name, type, default) end
 ---
 ---@return any ...
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.call_callback(name, ...) end
 
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 ---@alias DeclareCallbackRuleRelation
 ---|"before" # The callback function with description `first` will be executed before the function with description `second`.
 ---|"after" # The callback function with description `first` will be executed after the function with description `second`.
@@ -153,7 +156,7 @@ function luatexbase.call_callback(name, ...) end
 ---@param relation DeclareCallbackRuleRelation
 ---@param second string
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.declare_callback_rule(name, first, relation, second) end
 
 ---
@@ -180,7 +183,7 @@ function luatexbase.declare_callback_rule(name, first, relation, second) end
 ---
 ---@param module LualatexModule
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.provides_module(module) end
 
 ---
@@ -204,7 +207,7 @@ function luatexbase.provides_module(module) end
 ---@param module string
 ---@param text string
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.module_info(module, text) end
 
 ---
@@ -228,7 +231,7 @@ function luatexbase.module_info(module, text) end
 ---@param module string
 ---@param text string
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.module_warning(module, text) end
 
 ---
@@ -252,7 +255,7 @@ function luatexbase.module_warning(module, text) end
 ---@param module string
 ---@param text string
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.module_error(module, text) end
 
 ---
@@ -269,7 +272,7 @@ function luatexbase.module_error(module, text) end
 ---
 ---* Corresponding DTX source code: [ltluatex.dtx#L194-L201](https://github.com/latex3/latex2e/blob/ae4e1f74f2be2f8a13c0616287a8ff9009b72ca8/base/ltluatex.dtx#L194-L201)
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.new_attribute() end
 
 ---
@@ -285,7 +288,7 @@ function luatexbase.new_attribute() end
 ---* Corresponding DTX source code: [ltluatex.dtx#L210-L212](https://github.com/latex3/latex2e/blob/ae4e1f74f2be2f8a13c0616287a8ff9009b72ca8/base/ltluatex.dtx#L210-L212)
 ---* Corresponding DTX source code: [ltluatex.dtx#L1241-L1253](https://github.com/latex3/latex2e/blob/ae4e1f74f2be2f8a13c0616287a8ff9009b72ca8/base/ltluatex.dtx#L1241-L1253)
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.new_bytecode(name) end
 
 ---
@@ -304,7 +307,7 @@ function luatexbase.new_bytecode(name) end
 ---
 ---@return integer
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.new_chunkname(name) end
 
 ---
@@ -324,7 +327,7 @@ function luatexbase.new_chunkname(name) end
 ---
 ---@return integer
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.new_luafunction(name) end
 
 ---
@@ -339,7 +342,7 @@ function luatexbase.new_luafunction(name) end
 ---
 ---@return integer
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.new_whatsit(name) end
 
 ---
@@ -360,5 +363,5 @@ function luatexbase.new_whatsit(name) end
 ---
 ---@param name string
 ---
----😱 [Types](https://github.com/TeXLuaCATS/LuaLaTeX/blob/main/library/luatexbase.lua) incomplete or incorrect? 🙏 [Please contribute!](https://github.com/TeXLuaCATS/LuaLaTeX/pulls)
+---{{ contribute }}
 function luatexbase.registernumber(name) end
